@@ -1,0 +1,16 @@
+{
+    "manifest_version":3,
+    "name": "LinkStats",
+    "version": "1",
+    "permissions":[
+    "scripting"
+  ],
+    "description": "Get Stats about links",
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["LinkStatsDisplayScript.js"]
+      }
+    ]
+  }
+  
